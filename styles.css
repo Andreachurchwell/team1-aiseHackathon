@@ -20,7 +20,8 @@ body {
 }
 
 .deck {
-  width: min(100%, 1120px);
+  width: min(95vw, 1400px);
+  min-height: 88vh;
   border-radius: 32px;
   background: linear-gradient(180deg, rgba(13, 19, 44, 0.96), rgba(30, 35, 50, 0.98));
   box-shadow: 0 32px 120px rgba(6, 9, 27, 0.55);
@@ -31,6 +32,11 @@ body {
 .deck-header,
 .deck-footer {
   padding: 28px 36px;
+}
+
+.slides {
+  min-height: calc(88vh - 144px);
+  position: relative;
 }
 
 .deck-header {
