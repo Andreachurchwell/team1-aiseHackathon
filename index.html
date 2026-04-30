@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Three's Company MVP Deck</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="deck">
+      <header class="deck-header">
+        <h1>Team Three's Company Hackathon MVP</h1>
+        <p class="deck-subtitle">Use the arrows or buttons to navigate through the slides.</p>
+      </header>
+
+      <section class="slides">
+        <article class="slide active" data-title="Cover">
+          <h2>Welcome</h2>
+          <p>Team 1 presents our MVP deck for the hackathon.</p>
+          <div class="cover-asset">
+            <img src="assets/threesCompany.png" alt="Team photo" class="team-image" />
+            <p class="note">Team photo: Samantha Pomeroy, Ricky Hull, Andrea Churchwell.</p>
+          </div>
+        </article>
+
+        <article class="slide" data-title="Problem Statement">
+          <h2>Problem</h2>
+          <p>What user problem are we solving?</p>
+          <ul>
+            <li>Placeholder for current challenge</li>
+            <li>Placeholder for user pain points</li>
+            <li>Placeholder for impact if unsolved</li>
+          </ul>
+        </article>
+
+        <article class="slide" data-title="User Story">
+          <h2>User Story</h2>
+          <p>Describe the real person who needs this.</p>
+          <blockquote class="user-story">
+            <p><strong>As a</strong> busy team member who wants to move fast,</p>
+            <p><strong>I want</strong> a simple MVP roadmap and clear slide structure,</p>
+            <p><strong>So that</strong> I can stay aligned and show progress during the hackathon.</p>
+          </blockquote>
+          <p class="note">Replace this with a real user story once you decide on the exact audience.</p>
+        </article>
+
+        <article class="slide" data-title="Target Users">
+          <h2>Target Users</h2>
+          <p>Who benefits most from this solution?</p>
+          <ul>
+            <li>Primary user group</li>
+            <li>Secondary user group</li>
+            <li>Key scenario or use case</li>
+          </ul>
+        </article>
+
+        <article class="slide" data-title="Solution">
+          <h2>Solution</h2>
+          <p>Describe the core idea of your MVP.</p>
+          <ul>
+            <li>What the product does</li>
+            <li>Why it solves the problem</li>
+            <li>What makes it simple and compelling</li>
+          </ul>
+        </article>
+
+        <article class="slide" data-title="MVP Features">
+          <h2>MVP Features</h2>
+          <p>List the essential features you will build first.</p>
+          <ol>
+            <li>Feature 1</li>
+            <li>Feature 2</li>
+            <li>Feature 3</li>
+          </ol>
+        </article>
+
+        <article class="slide" data-title="Tech Stack">
+          <h2>Tech Stack</h2>
+          <p>Which technologies will you use?</p>
+          <ul>
+            <li>Framework / platform</li>
+            <li>Backend / APIs</li>
+            <li>Data / deployment</li>
+          </ul>
+        </article>
+
+        <article class="slide" data-title="Timeline">
+          <h2>Timeline</h2>
+          <p>How will you organize your work during the hackathon?</p>
+          <ul>
+            <li>Day 1: Planning & design</li>
+            <li>Day 2: Build core features</li>
+            <li>Day 3: Polish, test, and present</li>
+          </ul>
+        </article>
+
+        <article class="slide" data-title="Architecture">
+          <h2>Architecture</h2>
+          <p>High-level MVP flow.</p>
+          <div class="mermaid">
+            graph LR
+              User[User] -->|uses| Web["Web UI"]
+              Web -->|calls| API["FastAPI API"]
+              API --> DB[(Database)]
+              API --> Auth[(Auth / Login)]
+              DB -->|stores| Data[(MVP data)]
+          </div>
+          <p class="note">This diagram is rendered with Mermaid. Update it to match your final design.</p>
+        </article>
+
+        <article class="slide" data-title="Team">
+          <h2>Team</h2>
+          <p>Team members. Roles are TBD based on sprint priorities.</p>
+          <ul>
+            <li>Andrea Churchwell</li>
+            <li>Samantha Pomeroy</li>
+            <li>Ricky Hull</li>
+          </ul>
+        </article>
+
+        <article class="slide" data-title="Next Steps">
+          <h2>Next Steps</h2>
+          <p>Before Monday's build sprint:</p>
+          <ul>
+            <li>Lock in the final problem statement</li>
+            <li>Map the user journey (first screen, main action, end state)</li>
+            <li>Finalize the tech stack and architecture</li>
+            <li>Write the MVP feature list (what ships first?)</li>
+            <li>Set team roles and sprint schedule</li>
+          </ul>
+        </article>
+      </section>
+
+      <footer class="deck-footer">
+        <button id="prevBtn" class="nav-btn">← Previous</button>
+        <span id="slideCounter">1 / 8</span>
+        <button id="nextBtn" class="nav-btn">Next →</button>
+      </footer>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>
