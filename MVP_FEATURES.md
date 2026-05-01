@@ -1,19 +1,19 @@
 # MVP Feature List
 
-## Phase 1: Hackathon Build (This coming week)
+## Phase 1: Hackathon Build
 
-### Must Have (Core MVP)
+### Must Have
 - [ ] Feature 1:
 - [ ] Feature 2:
 - [ ] Feature 3:
 
-### Nice to Have (If time permits)
-- [ ] Feature A:
-- [ ] Feature B:
+### Nice to Have
+- [ ] Stretch feature A:
+- [ ] Stretch feature B:
 
 ---
 
-## Phase 2: Capstone (Future)
+## Phase 2: Capstone
 - Feature X:
 - Feature Y:
 - Feature Z:
@@ -21,11 +21,9 @@
 ---
 
 ## Acceptance Criteria
-For each feature, define:
+For each must-have feature, define:
 - What does "done" look like?
-- How do we test it?
-- Who owns it?
+- How will the team test it?
+- What needs to happen first?
 
----
-
-**Notes**: Be ruthless about Phase 1. Only include what fits in a week. Everything else goes to Phase 2 (capstone).
+Keep Phase 1 ruthless. If it does not support the demo path, push it to Phase 2.

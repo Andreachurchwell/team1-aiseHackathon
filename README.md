@@ -1,31 +1,26 @@
 # team1-aiseHackathon
 
-This week: planning and strategy. Next Monday: code.
+Bare-bones MVP pitch deck and planning docs for Team Three's Company.
 
-## This Week's Goals
-- Define the problem and target users
-- Map user journeys and touch points
-- Sketch the MVP architecture
-- Lock in the tech stack
-- Plan the sprint timeline
+## Current Goal
+Keep the deck ready for tonight's final problem statement. The slides are intentionally generic so the team can fill in the real user, solution, and scope once the direction is locked.
 
 ## Files in this repo
-- `index.html` — presentation deck for pitching ideas and progress
-- `styles.css` — theme styling
-- `script.js` — slide navigation
-- `assets/` — team photo and other visuals
-- `JOURNEY_MAP.md` — template for mapping user flows
-- `ARCHITECTURE_SKETCH.md` — space for drawing out the system design
+- `index.html` - presentation deck for the MVP pitch
+- `styles.css` - deck theme styling
+- `script.js` - slide navigation
+- `assets/` - team photo and supporting visuals
+- `JOURNEY_MAP.md` - template for the core user journey
+- `ARCHITECTURE_SKETCH.md` - template for the MVP architecture
+- `MVP_FEATURES.md` - phase 1 feature list template
 
 ## How to Present
-1. Open `index.html` in your browser
-2. Use arrow keys or buttons to navigate
-3. Edit slides directly in the HTML as you lock in decisions
+1. Open `index.html` in your browser.
+2. Use arrow keys or buttons to navigate.
+3. Edit slide text directly in the HTML as the team locks in decisions.
 
-## Planning Documents
-Fill these out as a team before Monday:
-- **User Journey Map**: Who uses it? What do they do first? Where do they get stuck?
-- **Architecture**: Frontend tech? Backend? Database? APIs?
-- **MVP Feature List**: What ships in week 1? What's phase 2?
-
-Once you have a solid problem statement and user story, you're ready to build.
+## Sprint Focus
+- Start with one problem statement.
+- Choose one primary user.
+- Build one core demo flow.
+- Move anything extra into phase two.

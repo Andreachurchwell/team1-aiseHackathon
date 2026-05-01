@@ -2,28 +2,27 @@
 
 ## High-Level Design
 
-```
-[User Interface]
-       |
-       v
-[API / Backend Logic]
-       |
-       v
-[Data Storage / External Services]
+```mermaid
+graph LR
+  User[User] --> Web[Web UI]
+  Web --> API[API / App Logic]
+  API --> Data[(Data Source)]
+  API --> Result[MVP Result]
+  Result --> Web
 ```
 
 ## Frontend
-- Technology: (React? Vue? Plain HTML/JS? Mobile app?)
-- Key screens: (list the main views)
+- Technology:
+- Key screens:
 - Frameworks / libraries:
 
 ## Backend
-- Technology: (FastAPI? Node? Django? Serverless?)
-- Key endpoints: (list main API routes)
-- Authentication: (how do we know who the user is?)
+- Technology:
+- Key endpoints:
+- Authentication:
 
 ## Data Layer
-- Database: (PostgreSQL? MongoDB? Supabase? Firebase?)
+- Database or file format:
 - What data do we store?
 - How do we query it?
 
@@ -32,14 +31,12 @@
 - How do we connect to them?
 
 ## Deployment
-- Where does this run? (Local? Vercel? AWS? Heroku?)
-- CI/CD pipeline: (automated tests / deployments?)
+- Where does this run?
+- What is needed for the demo?
 
 ## Security & Scaling
 - Authentication method:
-- Rate limiting or quotas:
-- Caching strategy:
+- Sensitive data concerns:
+- Rate limiting, caching, or quotas:
 
----
-
-**Notes**: Draw or describe your MVP architecture. This doesn't need to be perfect—it just needs to be clear enough that the team can start building on Monday.
+Fill this in once the final MVP direction is known.
