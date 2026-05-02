@@ -1,26 +1,28 @@
 # team1-aiseHackathon
 
-Bare-bones MVP pitch deck and planning docs for Team Three's Company.
+MVP pitch deck and planning docs for Team Three's Company.
 
-## Current Goal
-Keep the deck ready for tonight's final problem statement. The slides are intentionally generic so the team can fill in the real user, solution, and scope once the direction is locked.
+## MVP Concept
+Curriculum Support MVP: a curriculum-grounded Q&A system for cohort programs. Students get guided help based on their actual course materials, and admins get visibility into where students are struggling.
+
+## Problem Frame
+Cohort programs can have 100+ curriculum docs scattered across PDFs, markdown, slides, and other formats. Students cannot easily find or query the material. Instructors and admins do not have a clear view of where confusion is happening. The current fallback is asking a classmate or Googling the answer, neither of which reliably supports learning.
 
 ## Files in this repo
 - `index.html` - presentation deck for the MVP pitch
-- `styles.css` - deck theme styling
-- `script.js` - slide navigation
+- `styles.css` - deck styling and animated background
+- `script.js` - slide navigation and ambient background animation
 - `assets/` - team photo and supporting visuals
-- `JOURNEY_MAP.md` - template for the core user journey
-- `ARCHITECTURE_SKETCH.md` - template for the MVP architecture
-- `MVP_FEATURES.md` - phase 1 feature list template
+- `JOURNEY_MAP.md` - student/admin journey
+- `ARCHITECTURE_SKETCH.md` - RAG, ingestion, frontend, and admin architecture
+- `MVP_FEATURES.md` - phase 1 feature list and acceptance criteria
 
 ## How to Present
 1. Open `index.html` in your browser.
 2. Use arrow keys or buttons to navigate.
-3. Edit slide text directly in the HTML as the team locks in decisions.
+3. Keep the problem framing tight: students need guided help, admins need signal.
 
 ## Sprint Focus
-- Start with one problem statement.
-- Choose one primary user.
-- Build one core demo flow.
-- Move anything extra into phase two.
+- RAG pipeline with retrieval, ranking, Socratic response logic, and guardrails.
+- Ingestion pipeline for messy curriculum docs.
+- React frontend with student chat, role routing, logging, and admin view.

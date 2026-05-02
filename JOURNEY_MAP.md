@@ -1,39 +1,47 @@
 # User Journey Map
 
-## Who is this user?
-- Persona:
-- Role / context:
-- Current tools or frustrations:
+## Users
 
-## What are they trying to do?
-- Primary goal:
-- Secondary goals:
-- Success metric:
+### Student
+- Context: stuck on curriculum content during a cohort program.
+- Need: guided help grounded in the actual course materials.
+- Risk: Google or generic AI gives the final answer instead of supporting learning.
 
-## Step-by-step Journey
+### Admin
+- Context: non-technical program admin or instructor.
+- Need: visibility into where students are struggling.
+- Risk: confusion stays hidden until many students fall behind.
+
+## Student Journey
 
 ### Step 1: Entry Point
-- Where do they discover the MVP?
-- What do they see first?
-- What action do they take?
+- Student logs in and lands on the chat screen.
+- They ask a question about a lesson, assignment, or concept.
 
 ### Step 2: Main Action
-- What is the core thing they do?
-- What does the app show them?
-- Where might they get confused?
+- The backend embeds the question and retrieves relevant curriculum chunks from Chroma.
+- The system ranks retrieved context and generates a Socratic response.
+- Guardrails check that the response guides learning instead of giving away final answers.
 
 ### Step 3: Resolution
-- How do they know they succeeded?
-- What do they do next?
-- Do they leave, save, share, or come back?
+- Student gets a grounded explanation, hints, and next steps.
+- The question, timestamp, user, and relevant metadata are logged.
 
-## Pain Points
-- Where are they likely to get stuck?
-- What information do they need?
-- What might frustrate them?
+## Admin Journey
+
+### Step 1: Entry Point
+- Admin logs in and lands on a simple dashboard.
+
+### Step 2: Main Action
+- Admin views a table of student questions and timestamps.
+- Admin scans for repeated confusion, unclear lessons, or common concepts.
+
+### Step 3: Resolution
+- Admin knows where support is needed.
+- Admin can adjust instruction, office hours, or curriculum notes based on real signals.
 
 ## Success Indicators
-- How will the team measure whether the MVP worked?
-- What should the team observe during the demo?
-
-Fill this in after the final problem statement is confirmed.
+- Students receive useful guidance without final-answer leakage.
+- Responses cite or clearly rely on curriculum context.
+- Admin can identify at least one confusion pattern from the logs.
+- Demo shows both the student learning loop and the admin visibility loop.

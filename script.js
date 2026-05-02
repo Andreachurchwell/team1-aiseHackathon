@@ -2,6 +2,8 @@ const slides = Array.from(document.querySelectorAll('.slide'));
 const prevBtn = document.getElementById('prevBtn');
 const nextBtn = document.getElementById('nextBtn');
 const slideCounter = document.getElementById('slideCounter');
+const slideTitle = document.getElementById('slideTitle');
+const progressFill = document.getElementById('progressFill');
 const ambientCanvas = document.getElementById('ambientCanvas');
 let activeIndex = 0;
 
@@ -14,6 +16,8 @@ function showSlide(index) {
   activeIndex = index;
   slides[activeIndex].classList.add('active');
   slideCounter.textContent = `${activeIndex + 1} / ${slides.length}`;
+  slideTitle.textContent = slides[activeIndex].dataset.title || `Slide ${activeIndex + 1}`;
+  progressFill.style.width = `${((activeIndex + 1) / slides.length) * 100}%`;
 }
 
 function nextSlide() {

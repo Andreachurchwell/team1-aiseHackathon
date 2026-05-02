@@ -10,94 +10,136 @@
     <canvas id="ambientCanvas" aria-hidden="true"></canvas>
     <div class="deck">
       <header class="deck-header">
-        <h1>Hackathon MVP Deck</h1>
-        <p class="deck-subtitle">Bare-bones structure for tonight's problem statement and sprint plan.</p>
+        <div>
+          <h1>Curriculum Support MVP</h1>
+          <p class="deck-subtitle">Guided curriculum help for students, visibility for admins.</p>
+        </div>
+        <div class="slide-pill" id="slideTitle">Cover</div>
       </header>
 
       <section class="slides">
         <article class="slide active" data-title="Cover">
-          <p class="section-label">Hackathon Prep</p>
+          <p class="section-label">Hackathon MVP</p>
           <h2>
-            MVP Skeleton
-            <span style="color:#fb923c; display:block; margin-top:0.4rem;">Fill in tonight</span>
+            Curriculum Support MVP
+            <span style="color:#fb923c; display:block; margin-top:0.4rem;">Ask better. Learn deeper.</span>
           </h2>
-          <p>Use this deck to plug in the problem, user, solution, and build plan once the team has the final direction.</p>
-          <ul>
-            <li>Keep the idea small enough to build in the hackathon window.</li>
-            <li>Focus on one user, one core flow, and one clear demo moment.</li>
-            <li>Move anything extra into phase two.</li>
-          </ul>
+          <p>A curriculum-grounded Q&A system that helps students learn without handing them answers, while showing admins where the cohort is getting stuck.</p>
+          <div class="card-grid three-up">
+            <div class="info-card stat-card"><span>100+ docs</span> Curriculum-grounded support</div>
+            <div class="info-card stat-card"><span>Guided</span> Socratic help, not answer dumping</div>
+            <div class="info-card stat-card"><span>Signal</span> Admin visibility into stuck points</div>
+          </div>
+        </article>
+
+        <article class="slide" data-title="Users">
+          <h2>Users</h2>
+          <p>Two users, one shared problem: curriculum friction is invisible until it slows everyone down.</p>
+          <div class="card-grid two-up">
+            <div class="info-card persona-card">
+              <img src="assets/student.png" alt="Student user persona" />
+              <span>Student</span>
+              <p>Stuck on curriculum content and needs guided help, not final answers.</p>
+            </div>
+            <div class="info-card persona-card">
+              <img src="assets/teacher.png" alt="Teacher or admin user persona" />
+              <span>Admin</span>
+              <p>Non-technical and needs to see where students are struggling.</p>
+            </div>
+          </div>
+          <p class="note">30-second framing: students need learning support; admins need signal.</p>
         </article>
 
         <article class="slide" data-title="Problem">
           <h2>Problem</h2>
-          <p>What user problem are we solving?</p>
-          <ul>
-            <li>Current pain point:</li>
-            <li>Who feels this pain most:</li>
-            <li>Why it matters now:</li>
-          </ul>
-        </article>
-
-        <article class="slide" data-title="User Story">
-          <h2>User Story</h2>
-          <blockquote class="user-story">
-            <p><strong>As a</strong> [type of user],</p>
-            <p><strong>I want</strong> [simple action or outcome],</p>
-            <p><strong>So that</strong> [clear value or result].</p>
-          </blockquote>
-          <p class="note">Keep this specific. If the user story is fuzzy, the MVP will get too big.</p>
-        </article>
-
-        <article class="slide" data-title="Target Users">
-          <h2>Target Users</h2>
-          <p>Who benefits most from the first version?</p>
-          <ul>
-            <li><strong>Primary user:</strong></li>
-            <li><strong>Secondary user:</strong></li>
-            <li><strong>Demo scenario:</strong></li>
-          </ul>
+          <p>Cohort programs have 100+ docs of curriculum scattered across formats. Students cannot easily find or query it, and instructors are flying blind on where students are stuck.</p>
+          <div class="card-grid three-up">
+            <div class="info-card">
+              <span>Option 1</span>
+              Ask a classmate and hope they know.
+            </div>
+            <div class="info-card">
+              <span>Option 2</span>
+              Google it and get the answer handed over.
+            </div>
+            <div class="info-card accent-card">
+              <span>The gap</span>
+              Neither option supports actual learning or cohort-level insight.
+            </div>
+          </div>
         </article>
 
         <article class="slide" data-title="Solution">
           <h2>Solution</h2>
-          <p>Describe the core idea in one or two plain sentences.</p>
-          <ul>
-            <li>What the product does:</li>
-            <li>Why this solves the problem:</li>
-            <li>What makes the MVP intentionally small:</li>
-          </ul>
+          <p>The system fixes both sides of the gap.</p>
+          <div class="card-grid three-up">
+            <div class="info-card">
+              <span>For students</span>
+              Guided Q&A grounded in their actual curriculum.
+            </div>
+            <div class="info-card">
+              <span>For admins</span>
+              Visibility into what is breaking down across the cohort.
+            </div>
+            <div class="info-card">
+              <span>For teams</span>
+              Usable without an engineer running reports behind the scenes.
+            </div>
+          </div>
+        </article>
+
+        <article class="slide" data-title="Student Story">
+          <h2>Student Story</h2>
+          <div class="persona-layout">
+            <blockquote class="user-story">
+              <p><strong>As a</strong> student stuck on a curriculum concept,</p>
+              <p><strong>I want</strong> guided help based on my class materials,</p>
+              <p><strong>So that</strong> I can keep learning without being given the final answer.</p>
+            </blockquote>
+            <img src="assets/student.png" alt="Student user persona" class="persona-image" />
+          </div>
+        </article>
+
+        <article class="slide" data-title="Admin Story">
+          <h2>Admin Story</h2>
+          <div class="persona-layout">
+            <blockquote class="user-story">
+              <p><strong>As an</strong> admin or instructor,</p>
+              <p><strong>I want</strong> to see what students are asking and where they are stuck,</p>
+              <p><strong>So that</strong> I can improve support without needing technical help.</p>
+            </blockquote>
+            <img src="assets/teacher.png" alt="Teacher or admin user persona" class="persona-image" />
+          </div>
         </article>
 
         <article class="slide" data-title="MVP Features">
           <h2>MVP Features</h2>
-          <p>Build only what is needed for the demo path.</p>
-          <ol>
-            <li>Feature 1:</li>
-            <li>Feature 2:</li>
-            <li>Feature 3:</li>
-          </ol>
+          <p>Build the smallest version that proves the learning loop.</p>
+          <div class="card-grid three-up">
+            <div class="info-card numbered-card">
+              <span>01</span>
+              Student chat UI grounded in uploaded curriculum docs.
+            </div>
+            <div class="info-card numbered-card">
+              <span>02</span>
+              RAG backend with retrieval, ranking, Socratic responses, and guardrails.
+            </div>
+            <div class="info-card numbered-card">
+              <span>03</span>
+              Admin log view showing who asked what, when, and where confusion clusters.
+            </div>
+          </div>
         </article>
 
         <article class="slide" data-title="Tech Stack">
           <h2>Tech Stack</h2>
-          <p>Choose the simplest stack that lets the team demo confidently.</p>
-          <ul>
-            <li><strong>Frontend:</strong></li>
-            <li><strong>Backend/API:</strong></li>
-            <li><strong>Data/storage:</strong></li>
-            <li><strong>Deployment:</strong></li>
-          </ul>
-        </article>
-
-        <article class="slide" data-title="Timeline">
-          <h2>Timeline</h2>
-          <p>Three-day sprint plan.</p>
-          <ul>
-            <li><strong>Day 1:</strong> finalize scope, sketch screens, split tasks.</li>
-            <li><strong>Day 2:</strong> build the core user flow.</li>
-            <li><strong>Day 3:</strong> polish, test, and prepare the demo.</li>
-          </ul>
+          <p>Practical stack with clear component boundaries.</p>
+          <div class="card-grid two-up">
+            <div class="info-card"><span>Frontend</span> React chat UI, login, role routing, admin dashboard.</div>
+            <div class="info-card"><span>Backend</span> FastAPI for auth, chat, logs, and RAG endpoints.</div>
+            <div class="info-card"><span>Retrieval</span> Chroma vector DB with embeddings over curriculum chunks.</div>
+            <div class="info-card"><span>Data</span> PDFs and markdown files ingested into searchable chunks.</div>
+          </div>
         </article>
 
         <article class="slide" data-title="Architecture">
@@ -105,24 +147,48 @@
           <p>High-level MVP flow.</p>
           <div class="mermaid">
             graph LR
-              User[User] -->|uses| Web["Web UI"]
-              Web -->|calls| API["API / App Logic"]
-              API --> Data[(Data Source)]
-              API --> Result["MVP Result"]
-              Result --> Web
+              Docs[PDFs + Markdown] --> Ingest["Chunk + Embed"]
+              Ingest --> Chroma[(Chroma Vector DB)]
+              Student[Student Chat] --> API["FastAPI Backend"]
+              Admin[Admin Dashboard] --> API
+              API --> Chroma
+              API --> Guardrails["Socratic Logic + Guardrails"]
+              API --> Logs[(Question Logs)]
+              Guardrails --> Student
+              Logs --> Admin
           </div>
-          <p class="note">Update this once the team chooses the actual product direction.</p>
+        </article>
+
+        <article class="slide" data-title="Component Split">
+          <h2>Component Split</h2>
+          <p>Each component is defensible on its own and connects cleanly to the others.</p>
+          <div class="card-grid two-up">
+            <div class="info-card"><span>Sam</span> RAG pipeline, ranking, Socratic response logic, guardrails.</div>
+            <div class="info-card"><span>Ricky</span> Ingestion pipeline, chunking, embeddings, Chroma loading.</div>
+            <div class="info-card"><span>Andrea</span> React frontend, auth flow, logging calls, admin dashboard.</div>
+            <div class="info-card"><span>PM</span> Pitch flow, judge questions, scope control.</div>
+          </div>
+        </article>
+
+        <article class="slide" data-title="Timeline">
+          <h2>Timeline</h2>
+          <p>Three-day sprint plan.</p>
+          <div class="card-grid three-up">
+            <div class="info-card"><span>Day 1</span> Wireframes, API contracts, ingestion script, sample docs.</div>
+            <div class="info-card"><span>Day 2</span> Connect chat to RAG, write logs, build admin table.</div>
+            <div class="info-card"><span>Day 3</span> Guardrail testing, demo polish, pitch rehearsal.</div>
+          </div>
         </article>
 
         <article class="slide" data-title="Team">
           <h2>Team</h2>
           <p>Team Three's Company.</p>
           <div class="team-layout">
-            <ul>
-              <li>Andrea Churchwell</li>
-              <li>Samantha Pomeroy</li>
-              <li>Ricky Hull</li>
-            </ul>
+            <div class="card-grid team-cards">
+              <div class="info-card">Andrea Churchwell</div>
+              <div class="info-card">Samantha Pomeroy</div>
+              <div class="info-card">Ricky Hull</div>
+            </div>
             <img src="assets/threesCompany.png" alt="Team Three's Company" class="team-image" />
           </div>
         </article>
@@ -130,18 +196,23 @@
         <article class="slide" data-title="Next Steps">
           <h2>Next Steps</h2>
           <p>Before the build sprint:</p>
-          <ul>
-            <li>Drop in tonight's final problem statement.</li>
-            <li>Write the real user story and demo scenario.</li>
-            <li>Pick the three must-have MVP features.</li>
-            <li>Agree on the first build tasks after the MVP scope is clear.</li>
-          </ul>
+          <div class="card-grid two-up">
+            <div class="info-card">Lock the product name and final demo script.</div>
+            <div class="info-card">Define the JWT/auth contract and log schema.</div>
+            <div class="info-card">Pick 10-20 representative curriculum files for ingestion.</div>
+            <div class="info-card">Write guardrail examples: guide, cite, refuse final-answer requests.</div>
+          </div>
         </article>
       </section>
 
       <footer class="deck-footer">
         <button id="prevBtn" class="nav-btn">&larr; Previous</button>
-        <span id="slideCounter">1 / 11</span>
+        <div class="deck-progress" aria-hidden="true">
+          <span id="slideCounter">1 / 13</span>
+          <div class="progress-track">
+            <div class="progress-fill" id="progressFill"></div>
+          </div>
+        </div>
         <button id="nextBtn" class="nav-btn">Next &rarr;</button>
       </footer>
     </div>
