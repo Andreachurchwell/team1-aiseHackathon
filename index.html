@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Team Three's Company MVP Deck</title>
+    <title>Two-Role Learning Assistant MVP</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -11,204 +11,147 @@
     <div class="deck">
       <header class="deck-header">
         <div>
-          <h1>Curriculum Support MVP</h1>
-          <p class="deck-subtitle">Guided curriculum help for students, visibility for admins.</p>
+          <h1>Two-Role Learning Assistant</h1>
+          <p class="deck-subtitle">Hackathon / capstone MVP pitch</p>
         </div>
-        <div class="slide-pill" id="slideTitle">Cover</div>
+        <div class="slide-pill" id="slideTitle">Problem</div>
       </header>
 
       <section class="slides">
-        <article class="slide active" data-title="Cover">
-          <p class="section-label">Hackathon MVP</p>
-          <h2>
-            Curriculum Support MVP
-            <span style="color:#fb923c; display:block; margin-top:0.4rem;">Ask better. Learn deeper.</span>
-          </h2>
-          <p>A curriculum-grounded Q&A system that helps students learn without handing them answers, while showing admins where the cohort is getting stuck.</p>
+        <article class="slide active" data-title="Problem">
+          <p class="section-label">Deliverable 1</p>
+          <h2>Problem Framing</h2>
+          <p class="lead">Cohort programs move fast. Even when curriculum lives in Canvas, it is easy for students to feel behind and hard to quickly find the exact help they need.</p>
           <div class="card-grid three-up">
-            <div class="info-card stat-card"><span>100+ docs</span> Curriculum-grounded support</div>
-            <div class="info-card stat-card"><span>Guided</span> Socratic help, not answer dumping</div>
-            <div class="info-card stat-card"><span>Signal</span> Admin visibility into stuck points</div>
+            <div class="info-card"><span>Students</span> Can feel behind quickly when they cannot find the right explanation.</div>
+            <div class="info-card"><span>Current fallback</span> Ask classmates or Google direct answers.</div>
+            <div class="info-card"><span>Instructors</span> Cannot see where students are getting stuck.</div>
           </div>
+          <aside class="speaker-notes">Say: The problem is not just access to answers. The problem is learning support and visibility.</aside>
         </article>
 
         <article class="slide" data-title="Users">
-          <h2>Users</h2>
-          <p>Two users, one shared problem: curriculum friction is invisible until it slows everyone down.</p>
-          <div class="card-grid two-up">
-            <div class="info-card persona-card">
-              <img src="assets/student.png" alt="Student user persona" />
-              <span>Student</span>
-              <p>Stuck on curriculum content and needs guided help, not final answers.</p>
+          <p class="section-label">Deliverable 1</p>
+          <h2>Users + Why It Matters</h2>
+          <div class="user-grid">
+            <div class="persona-card">
+              <img src="assets/student.png" alt="Student" />
+              <div>
+                <span>Student</span>
+                <p>Asks questions in chat and receives Socratic guidance grounded in the actual curriculum.</p>
+              </div>
             </div>
-            <div class="info-card persona-card">
-              <img src="assets/teacher.png" alt="Teacher or admin user persona" />
-              <span>Admin</span>
-              <p>Non-technical and needs to see where students are struggling.</p>
-            </div>
-          </div>
-          <p class="note">30-second framing: students need learning support; admins need signal.</p>
-        </article>
-
-        <article class="slide" data-title="Problem">
-          <h2>Problem</h2>
-          <p>Cohort programs have 100+ docs of curriculum scattered across formats. Students cannot easily find or query it, and instructors are flying blind on where students are stuck.</p>
-          <div class="card-grid three-up">
-            <div class="info-card">
-              <span>Option 1</span>
-              Ask a classmate and hope they know.
-            </div>
-            <div class="info-card">
-              <span>Option 2</span>
-              Google it and get the answer handed over.
-            </div>
-            <div class="info-card accent-card">
-              <span>The gap</span>
-              Neither option supports actual learning or cohort-level insight.
+            <div class="persona-card">
+              <img src="assets/teacher.png" alt="Admin or instructor" />
+              <div>
+                <span>Admin / Instructor</span>
+                <p>Sees logged question themes and stuck points so support can improve without technical help.</p>
+              </div>
             </div>
           </div>
-        </article>
-
-        <article class="slide" data-title="Solution">
-          <h2>Solution</h2>
-          <p>The system fixes both sides of the gap.</p>
-          <div class="card-grid three-up">
-            <div class="info-card">
-              <span>For students</span>
-              Guided Q&A grounded in their actual curriculum.
-            </div>
-            <div class="info-card">
-              <span>For admins</span>
-              Visibility into what is breaking down across the cohort.
-            </div>
-            <div class="info-card">
-              <span>For teams</span>
-              Usable without an engineer running reports behind the scenes.
-            </div>
-          </div>
-        </article>
-
-        <article class="slide" data-title="Student Story">
-          <h2>Student Story</h2>
-          <div class="persona-layout">
-            <blockquote class="user-story">
-              <p><strong>As a</strong> student stuck on a curriculum concept,</p>
-              <p><strong>I want</strong> guided help based on my class materials,</p>
-              <p><strong>So that</strong> I can keep learning without being given the final answer.</p>
-            </blockquote>
-            <img src="assets/student.png" alt="Student user persona" class="persona-image" />
-          </div>
-        </article>
-
-        <article class="slide" data-title="Admin Story">
-          <h2>Admin Story</h2>
-          <div class="persona-layout">
-            <blockquote class="user-story">
-              <p><strong>As an</strong> admin or instructor,</p>
-              <p><strong>I want</strong> to see what students are asking and where they are stuck,</p>
-              <p><strong>So that</strong> I can improve support without needing technical help.</p>
-            </blockquote>
-            <img src="assets/teacher.png" alt="Teacher or admin user persona" class="persona-image" />
-          </div>
-        </article>
-
-        <article class="slide" data-title="MVP Features">
-          <h2>MVP Features</h2>
-          <p>Build the smallest version that proves the learning loop.</p>
-          <div class="card-grid three-up">
-            <div class="info-card numbered-card">
-              <span>01</span>
-              Student chat UI grounded in uploaded curriculum docs.
-            </div>
-            <div class="info-card numbered-card">
-              <span>02</span>
-              RAG backend with retrieval, ranking, Socratic responses, and guardrails.
-            </div>
-            <div class="info-card numbered-card">
-              <span>03</span>
-              Admin log view showing who asked what, when, and where confusion clusters.
-            </div>
-          </div>
-        </article>
-
-        <article class="slide" data-title="Tech Stack">
-          <h2>Tech Stack</h2>
-          <p>Practical stack with clear component boundaries.</p>
-          <div class="card-grid two-up">
-            <div class="info-card"><span>Frontend</span> React chat UI, login, role routing, admin dashboard.</div>
-            <div class="info-card"><span>Backend</span> FastAPI for auth, chat, logs, and RAG endpoints.</div>
-            <div class="info-card"><span>Retrieval</span> Chroma vector DB with embeddings over curriculum chunks.</div>
-            <div class="info-card"><span>Data</span> PDFs and markdown files ingested into searchable chunks.</div>
-          </div>
+          <p class="plain-note">The goal is safe learning help for students and clear signals for admins.</p>
+          <aside class="speaker-notes">Say: Students need help without answer dumping. Admins need patterns without needing to inspect the system manually.</aside>
         </article>
 
         <article class="slide" data-title="Architecture">
-          <h2>Architecture</h2>
-          <p>High-level MVP flow.</p>
+          <p class="section-label">Deliverable 2</p>
+          <h2>System Architecture</h2>
+          <p class="lead">Two roles, one curriculum-grounded assistant, and clear ownership across the stack.</p>
           <div class="mermaid">
             graph LR
-              Docs[PDFs + Markdown] --> Ingest["Chunk + Embed"]
-              Ingest --> Chroma[(Chroma Vector DB)]
-              Student[Student Chat] --> API["FastAPI Backend"]
-              Admin[Admin Dashboard] --> API
-              API --> Chroma
-              API --> Guardrails["Socratic Logic + Guardrails"]
-              API --> Logs[(Question Logs)]
-              Guardrails --> Student
-              Logs --> Admin
+              Docs["Curriculum docs<br/>Owner: Ricky"] --> Ingest["Ingest + chunk<br/>Owner: Ricky"]
+              Ingest --> Chroma[("Chroma vector DB<br/>Owner: Ricky")]
+              Login["Login + JWT auth<br/>Owner: Andrea"] --> Router{"Student or Admin?"}
+              Router --> Chat["Student chat UI<br/>Owner: Andrea"]
+              Router --> Dash["Admin dashboard<br/>Owner: Andrea"]
+              Chat --> API["FastAPI backend"]
+              API --> RAG["RAG + guardrails<br/>Owner: Sam"]
+              Chroma --> RAG
+              RAG --> Chat
+              API --> Logs[("Conversation logs<br/>Owner: Andrea")]
+              Logs --> Dash
           </div>
+          <aside class="speaker-notes">Say: Ricky owns the corpus pipeline, Sam owns the answer quality and guardrails, Andrea owns user-facing screens and routing.</aside>
         </article>
 
-        <article class="slide" data-title="Component Split">
-          <h2>Component Split</h2>
-          <p>Each component is defensible on its own and connects cleanly to the others.</p>
-          <div class="card-grid two-up">
-            <div class="info-card"><span>Sam</span> RAG pipeline, ranking, Socratic response logic, guardrails.</div>
-            <div class="info-card"><span>Ricky</span> Ingestion pipeline, chunking, embeddings, Chroma loading.</div>
-            <div class="info-card"><span>Andrea</span> React frontend, auth flow, logging calls, admin dashboard.</div>
-            <div class="info-card"><span>PM</span> Pitch flow, judge questions, scope control.</div>
-          </div>
-        </article>
-
-        <article class="slide" data-title="Timeline">
-          <h2>Timeline</h2>
-          <p>Three-day sprint plan.</p>
-          <div class="card-grid three-up">
-            <div class="info-card"><span>Day 1</span> Wireframes, API contracts, ingestion script, sample docs.</div>
-            <div class="info-card"><span>Day 2</span> Connect chat to RAG, write logs, build admin table.</div>
-            <div class="info-card"><span>Day 3</span> Guardrail testing, demo polish, pitch rehearsal.</div>
-          </div>
-        </article>
-
-        <article class="slide" data-title="Team">
-          <h2>Team</h2>
-          <p>Team Three's Company.</p>
-          <div class="team-layout">
-            <div class="card-grid team-cards">
-              <div class="info-card">Andrea Churchwell</div>
-              <div class="info-card">Samantha Pomeroy</div>
-              <div class="info-card">Ricky Hull</div>
+        <article class="slide" data-title="MVP Scope">
+          <p class="section-label">Deliverable 3</p>
+          <h2>MVP Scope by June 2</h2>
+          <div class="scope-grid">
+            <div class="scope-panel in-scope">
+              <h3>IN</h3>
+              <ul>
+                <li>Corpus ingested and queryable with real content</li>
+                <li>Student chat UI</li>
+                <li>Socratic response instead of direct answers</li>
+                <li>Guardrails on every response</li>
+                <li>Conversation logging: question, response, timestamp, topic</li>
+                <li>Admin view with logged conversations</li>
+                <li>Two hardcoded roles: student/admin</li>
+                <li>Docker Compose + GitHub CI</li>
+              </ul>
             </div>
-            <img src="assets/threesCompany.png" alt="Team Three's Company" class="team-image" />
+            <div class="scope-panel out-scope">
+              <h3>OUT</h3>
+              <ul>
+                <li>Individual user accounts or registration</li>
+                <li>Student-specific history</li>
+                <li>Analytics or visualizations</li>
+                <li>File upload UI for admins</li>
+                <li>Multi-cohort support</li>
+              </ul>
+            </div>
           </div>
+          <aside class="speaker-notes">Say: This is intentionally narrow. We are proving the student learning loop and the admin visibility loop.</aside>
         </article>
 
-        <article class="slide" data-title="Next Steps">
-          <h2>Next Steps</h2>
-          <p>Before the build sprint:</p>
-          <div class="card-grid two-up">
-            <div class="info-card">Lock the product name and final demo script.</div>
-            <div class="info-card">Define the JWT/auth contract and log schema.</div>
-            <div class="info-card">Pick 10-20 representative curriculum files for ingestion.</div>
-            <div class="info-card">Write guardrail examples: guide, cite, refuse final-answer requests.</div>
+        <article class="slide" data-title="UX Flow">
+          <p class="section-label">Deliverable 4</p>
+          <h2>UX Flow / Wireframes</h2>
+          <p class="lead">The Figma walkthrough shows the full path: choose a role, ask privately, and review cohort support signals.</p>
+          <div class="demo-layout">
+            <div class="demo-video">
+              <span>Figma walkthrough</span>
+              <video src="assets/figmademo.mp4" controls muted playsinline preload="metadata"></video>
+            </div>
+            <div class="flow-list">
+              <div><span>01</span> Login with password</div>
+              <div><span>02</span> Choose Student or Admin</div>
+              <div><span>03</span> Student asks in chat</div>
+              <div><span>04</span> Admin reviews logged conversations</div>
+            </div>
           </div>
+          <aside class="speaker-notes">Say: We will show the Figma walkthrough instead of crowding this slide with tiny screenshots.</aside>
+        </article>
+
+        <article class="slide" data-title="Ownership">
+          <p class="section-label">Team</p>
+          <h2>Team Ownership</h2>
+          <div class="card-grid three-up">
+            <div class="info-card"><span>Sam</span> RAG, guardrails, and Socratic response logic.</div>
+            <div class="info-card"><span>Ricky</span> Ingestion pipeline, chunking, embeddings, Chroma vector DB.</div>
+            <div class="info-card"><span>Andrea</span> Frontend, auth/role routing, logging, admin dashboard.</div>
+          </div>
+          <aside class="speaker-notes">Say: Each owner has a clear component with clear inputs and outputs.</aside>
+        </article>
+
+        <article class="slide" data-title="Value">
+          <p class="section-label">Close</p>
+          <h2>What This Proves</h2>
+          <p class="lead">The MVP proves a two-sided learning loop: students get guided help, and admins see where support is needed.</p>
+          <div class="card-grid three-up">
+            <div class="info-card"><span>For students</span> Safer questions and better learning support.</div>
+            <div class="info-card"><span>For admins</span> Clearer visibility into curriculum friction.</div>
+            <div class="info-card"><span>For the program</span> Less guesswork, faster intervention, stronger outcomes.</div>
+          </div>
+          <aside class="speaker-notes">Say: This is not trying to replace teaching. It helps students learn and helps instructors know where to focus.</aside>
         </article>
       </section>
 
       <footer class="deck-footer">
         <button id="prevBtn" class="nav-btn">&larr; Previous</button>
         <div class="deck-progress" aria-hidden="true">
-          <span id="slideCounter">1 / 13</span>
+          <span id="slideCounter">1 / 7</span>
           <div class="progress-track">
             <div class="progress-fill" id="progressFill"></div>
           </div>
@@ -219,7 +162,7 @@
 
     <script src="https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js"></script>
     <script>
-      mermaid.initialize({ startOnLoad: true, theme: 'dark' });
+      mermaid.initialize({ startOnLoad: true, theme: 'neutral' });
     </script>
     <script src="script.js"></script>
   </body>

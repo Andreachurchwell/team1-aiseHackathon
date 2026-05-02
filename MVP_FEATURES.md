@@ -1,41 +1,26 @@
-# MVP Feature List
+# MVP Scope for June 2
 
-## Phase 1: Hackathon Build
+## In
+- Canvas curriculum corpus ingested and queryable with real content.
+- Student chat UI.
+- Socratic response instead of direct answers.
+- Guardrails enforced on every response.
+- Conversation logging: question, response, timestamp, topic.
+- Admin view with logged conversations.
+- Two hardcoded roles: student/admin.
+- Docker Compose runs with one command.
+- GitHub CI.
 
-### Must Have
-- [ ] Student chat screen that sends curriculum questions to the backend.
-- [ ] FastAPI backend endpoint for chat requests.
-- [ ] RAG retrieval from Chroma: query, embed, retrieve top-k chunks, rank.
-- [ ] Socratic response logic that guides students without handing over final answers.
-- [ ] Guardrails and post-generation validation for answer leakage and off-curriculum responses.
-- [ ] Ingestion script that reads PDFs and markdown files.
-- [ ] Chunking, embeddings, and Chroma loading for the curriculum corpus.
-- [ ] Graceful handling for malformed files: log and skip, do not crash.
-- [ ] Login or role routing for student and admin views.
-- [ ] Admin table showing who asked what and when.
-- [ ] Basic question logging from the frontend/backend flow.
-
-### Nice to Have
-- [ ] Confusion clusters by topic, lesson, or document.
-- [ ] Admin filters by student, date, source doc, or concept.
-- [ ] Citation links back to source curriculum chunks.
-- [ ] Feedback button for "helpful" or "still stuck."
-
----
-
-## Phase 2: Capstone
-- Full LMS or curriculum platform integration.
-- Better analytics for cohort-level trends.
-- Source document management UI.
-- More advanced guardrail evaluation set.
-- Instructor recommendations based on repeated confusion.
-
----
+## Out
+- Individual user accounts or registration.
+- Student-specific history.
+- Analytics or visualizations.
+- File upload UI for admins.
+- Multi-cohort support.
 
 ## Acceptance Criteria
-- A student can ask a curriculum question and receive a guided response grounded in retrieved course content.
-- The response avoids giving final answers when the student asks for direct completion.
-- The ingestion pipeline can process a small messy corpus of PDFs and markdown files.
-- Bad files are logged and skipped without stopping ingestion.
-- Admins can view a table of student questions and timestamps.
-- The team can explain each component's inputs, outputs, and boundaries.
+- Student can choose the student role, ask a question, and receive curriculum-grounded guided help.
+- Admin can choose the admin role and see logged conversations in a simple table.
+- The assistant avoids direct answer dumping and uses Socratic guidance.
+- The selected Canvas curriculum corpus is searchable through Chroma.
+- The app runs locally through Docker Compose.
