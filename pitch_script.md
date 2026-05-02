@@ -1,142 +1,213 @@
-# 5-6 Minute Pitch Script
+# 5–6 Minute Pitch Script
 
-## Slide 1 - Problem Framing
-**Andrea, ~45 seconds**
+**Product:** Our Door  
+**Team:** Three’s Company  
 
-"Cohort programs like ours move fast, and they have a lot of materials: PDFs, slides, markdown files, recordings, notes, and assignments.
+---
 
-The problem is that when a student gets stuck, it is easy to feel overwhelmed and behind really quickly.
+## Slide 1 – Problem Framing  
+**Andrea (~45 seconds)**
 
-So they usually do one of three things: ask a classmate, Google the answer, or use ChatGPT for a direct answer. Those can help in the moment, but they may not match the curriculum and they do not always support learning.
+"We're Three's Company, and our MVP is called *Our Door.*
 
-At the same time, instructors and admins don't have a clear way to see where students are getting stuck. They see the final work, but not the confusion that happened before it.
+Our Door is built around a simple idea: when students get stuck, they shouldn't have to guess where to go next.
 
-Our angle is to help students get unstuck using the program's own materials, while helping instructors see repeated confusion patterns before students fall behind."
+Cohort programs like ours move fast, and they come with a lot of materials: PDFs, slides, markdown files, recordings, notes, and assignments.
 
-**Transition:** "That brings us to the two users we designed this around."
+The problem is that when a student gets stuck, it’s easy to feel overwhelmed and fall behind quickly.
 
-## Slide 2 - Users + Why It Matters
-**Andrea, ~45 seconds**
+So they usually do one of three things: ask a classmate, Google the answer, or use tools like ChatGPT for a direct answer.
 
-"We're solving this for two users.
+Those can help in the moment, but they don’t always match the curriculum, and they don’t always support real learning.
 
-The first is the student. They need a safe place to ask questions and get help thinking through the material, not just a final answer.
+At the same time, instructors don’t have a clear way to see where students are getting stuck. They see final work, but not the confusion that happened before it.
 
-The second is the admin or instructor. They need to see patterns: what students are asking about, where confusion keeps coming up, and where support is needed.
+Our angle is simple: help students get unstuck using the program’s own materials, while helping instructors see patterns of confusion before students fall behind."
 
-Why this matters is simple: learning isn't just about getting the right answer. It's about understanding how to get there.
+**Transition:**  
+"That brings us to the two users we designed this around."
 
-This product supports both sides of that loop: guided help for students, and clear signals for admins."
+---
 
-**Transition:** "Ricky is going to walk through how the system makes that possible."
+## Slide 2 – Users + Why It Matters  
+**Andrea (~50 seconds)**
 
-## Slide 3 - System Architecture
-**Ricky, ~40 seconds**
+"We’re solving this for two users.
+
+The first is the student.
+
+They need a safe place to ask questions — privately.
+
+Because in a cohort setting, a lot of students won’t ask at all if they feel embarrassed. And when they stop asking, they stop learning.
+
+Our Door removes that pressure completely. Students can ask anything without feeling exposed.
+
+And instead of just giving answers, we guide them through what we call *three knocks.*
+
+The first knock is a hint.  
+The second knock points them to the right part of the curriculum.  
+The third knock gives a next step to keep them moving forward.
+
+The door opens because the student understands where to go next — not because we handed them the answer.
+
+The second user is the instructor or admin.
+
+They need visibility: what students are asking, where confusion keeps coming up, and where support is needed.
+
+Why this matters is simple: learning isn’t just about getting the right answer — it’s about understanding how to get there.
+
+Our Door supports both sides of that loop: guided help for students, and clear signals for instructors."
+
+**Transition:**  
+"Ricky is going to walk through how the system makes that possible."
+
+---
+
+## Slide 3 – System Architecture  
+**Ricky (~40 seconds)**
 
 "On the left side, I handle the curriculum pipeline.
 
-We take the Canvas curriculum materials and any admin-provided course coverage materials, then break them into smaller sections.
+We take curriculum materials — like Canvas content and admin-provided resources — and break them into smaller sections.
 
-Then we convert those sections into a format the system can search and store them in a database.
+Then we convert those sections into a searchable format and store them in a database.
 
 So instead of digging through files, the system can quickly find the most relevant pieces of the curriculum when a student asks a question.
 
 The goal is to take messy content and make it usable."
 
-**Transition:** "That searchable curriculum feeds into Sam's part of the system."
+**Transition:**  
+"That searchable curriculum feeds into Sam's part of the system."
 
-**Sam, ~40 seconds**
+---
+
+**Sam (~40 seconds)**
 
 "My part is the core system: the retrieval and response layer.
 
-When a student asks a question, the system looks through that curriculum and pulls the most relevant sections.
+When a student asks a question, the system looks through the curriculum and pulls the most relevant sections.
 
 Then it uses that to generate a response.
 
-But the key difference is that we're not giving direct answers.
+But the key difference is that we don’t give direct answers right away.
 
-The system responds in a Socratic way, meaning it guides the student with questions or hints so they can think through the problem themselves.
+Instead, we guide the student using the three-knock system: a hint, a curriculum reference, and a next thinking step.
 
-We also enforce guardrails, so everything stays grounded in the curriculum, there are no made-up answers, and the system does not skip straight to solutions.
+We also enforce guardrails so everything stays grounded in the curriculum — no made-up answers, and no skipping straight to solutions.
 
 So instead of answering for the student, the system helps them learn."
 
-**Transition:** "And Andrea connects that to the actual user experience."
+**Transition:**  
+"And Andrea connects that to the user experience."
 
-**Andrea, ~25 seconds**
+---
+
+**Andrea (~25 seconds)**
 
 "On the user-facing side, I handle login, role routing, the chat interface, conversation logging, and the admin dashboard.
 
-Users choose one of two roles, student or admin, and get routed to the right experience.
+Users choose a role — student or admin — and get routed to the right experience.
 
-So everything you just heard actually shows up in a simple, usable interface."
+So everything you just heard shows up in a simple, usable interface."
 
-## Slide 4 - MVP Scope by June 2
-**Sam, ~50 seconds**
+---
+
+## Slide 4 – MVP Scope  
+**Sam (~50 seconds)**
 
 "For the MVP, we were very intentional about scope.
 
-What's in: real curriculum that's fully searchable, a backend ingestion path for admin-provided course coverage materials, a working student chat experience, Socratic responses instead of direct answers, guardrails on every response, and full conversation logging.
+What’s in:
+- Real curriculum that’s fully searchable  
+- A backend ingestion path for course materials  
+- A working student chat experience  
+- The three-knock guidance system  
+- Guardrails on every response  
+- Full conversation logging  
+- A simple admin dashboard  
 
-Admins can view those logs in a simple dashboard.
+We also support two roles — student and admin — and the system runs with a single command using Docker.
 
-We also support two hardcoded roles, student and admin, and the project runs with one command using Docker.
+What’s out:
+- User accounts  
+- Advanced analytics dashboards  
+- Polished upload tools  
+- Multi-cohort support  
 
-What's out: user accounts, analytics dashboards, a polished admin file upload screen, and multi-cohort support.
+The goal wasn’t to build everything.
 
-The goal wasn't to build everything.
+It was to prove the core system works end-to-end — from curriculum to guided learning to instructor visibility."
 
-It was to prove the core system works end-to-end, from curriculum to guided learning to admin visibility."
+**Transition:**  
+"And now Andrea will show what that looks like."
 
-**Transition:** "And now Andrea will show what that looks like."
+---
 
-## Slide 5 - UX Flow / Wireframes
-**Andrea, ~1 minute**
+## Slide 5 – UX Flow / Prototype  
+**Andrea (~1 minute)**
 
-"This slide shows the user experience.
+"This slide shows our Figma concept.
 
-We start with a simple login screen. No accounts, just choose a role: student or admin.
+If you’re a student, you go into a simple chat.
 
-If you're a student, you go into the chat interface.
+You ask a question — privately — and instead of getting the answer, you get three guided knocks: a hint, a curriculum reference, and a next step.
 
-You ask a question, and instead of getting the answer, you get guided help, something that pushes you to think.
+So you’re not just getting unstuck — you’re learning how to move forward.
 
-If you're an admin, you go to the dashboard.
+If you’re an admin, you see a dashboard.
 
 You can see what students are asking, when they asked it, and what topic it relates to.
 
-So instead of guessing where students are stuck, you can actually see it.
+So instead of guessing where students are struggling, you can actually see it.
 
-The goal here was simplicity: students know where to ask, and admins know where to look."
+We kept the experience intentionally simple:
+one place to ask, one place to look, and everything centered around learning."
 
-**Transition:** "The work breaks down cleanly across the team."
+**Transition:**  
+"The work breaks down cleanly across the team."
 
-## Slide 6 - Team Ownership
-**Ricky, ~35 seconds**
+---
+
+## Slide 6 – Team Ownership  
+**Ricky (~35 seconds)**
 
 "We split this into three clear parts.
 
-I own ingestion: taking curriculum content and making it searchable.
+I own ingestion — taking curriculum and making it searchable.
 
-Sam owns the core system: the retrieval, response logic, and guardrails.
+Sam owns the core system — retrieval, response logic, and guardrails.
 
-Andrea owns everything user-facing: frontend, login, logging, and the dashboard.
+Andrea owns the user experience — frontend, login, logging, and the dashboard.
 
-Each piece is independent, but together they form one complete system."
+Each part is independent, but together they form one complete system."
 
-**Transition:** "I'll hand it to Sam to close us out."
+**Transition:**  
+"I’ll hand it to Sam to close us out."
 
-## Slide 7 - Closing Value
-**Sam, ~45 seconds**
+---
+
+## Slide 7 – Closing Value  
+**Sam (~45 seconds)**
 
 "What this proves is simple.
 
-You can take a large Canvas curriculum and turn it into something that actually supports learning.
+You can take a large curriculum and turn it into something that actually supports learning.
 
-Students don't just get answers. They get guided thinking.
+Students don’t just get answers — they knock.
 
-Admins don't just guess. They can see where students are struggling.
+One knock gives a hint.  
+Two knocks give guidance.  
+By the third knock, they understand where to go next.
 
-So instead of 'just Google it' or 'just ask someone,' you get a system that helps students ask better questions and helps instructors know exactly where to step in.
+And they can do that privately, without feeling embarrassed to ask.
 
-That's the value of this two-role learning assistant."
+At the same time, every question becomes a signal.
+
+Instructors don’t have to guess anymore — they can see where students are struggling and step in earlier.
+
+So instead of 'just Google it' or 'just ask someone,'
+
+Our Door gives students a clear place to go —
+and gives instructors a clear view of what’s happening.
+
+That’s the value of Our Door."

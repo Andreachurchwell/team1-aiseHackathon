@@ -3,16 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Two-Role Learning Assistant MVP</title>
+    <title>Our Door MVP Deck</title>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <canvas id="ambientCanvas" aria-hidden="true"></canvas>
     <div class="deck">
       <header class="deck-header">
-        <div>
-          <h1>Two-Role Learning Assistant</h1>
-          <p class="deck-subtitle">Hackathon / capstone MVP pitch</p>
+        <div class="brand-lockup">
+          <div class="logo-mark" aria-hidden="true">
+            <span></span>
+          </div>
+          <div>
+            <h1>Our Door</h1>
+            <p class="deck-subtitle">A two-role learning assistant by Three's Company</p>
+          </div>
         </div>
         <div class="slide-pill" id="slideTitle">Problem</div>
       </header>
@@ -27,7 +32,6 @@
             <div class="info-card"><span>Current fallback</span> Ask classmates, Google, or use ChatGPT for direct answers.</div>
             <div class="info-card"><span>Our angle</span> Use the program's own materials and show repeated confusion before students fall behind.</div>
           </div>
-          <aside class="speaker-notes">Say: The problem is not just access to answers. The problem is learning support and visibility.</aside>
         </article>
 
         <article class="slide" data-title="Users">
@@ -38,7 +42,7 @@
               <img src="assets/student.png" alt="Student" />
               <div>
                 <span>Student</span>
-                <p>Asks questions in chat and receives Socratic guidance grounded in the actual curriculum.</p>
+                <p>Asks questions in chat and gets three guided knocks: hint, curriculum reference, next thinking step.</p>
               </div>
             </div>
             <div class="persona-card">
@@ -50,7 +54,6 @@
             </div>
           </div>
           <p class="plain-note user-goal-note">The goal is safe learning help for students and clear signals for admins.</p>
-          <aside class="speaker-notes">Say: Students need help without answer dumping. Admins need patterns without needing to inspect the system manually.</aside>
         </article>
 
         <article class="slide" data-title="Architecture">
@@ -72,7 +75,6 @@
               API --> Logs[("Conversation logs<br/>Owner: Andrea")]
               Logs --> Dash
           </div>
-          <aside class="speaker-notes">Say: Ricky owns the corpus pipeline, Sam owns the answer quality and guardrails, Andrea owns user-facing screens and routing.</aside>
         </article>
 
         <article class="slide" data-title="MVP Scope">
@@ -85,6 +87,7 @@
                 <li>Canvas corpus ingested and queryable with real content</li>
                 <li>Backend ingestion path for admin-provided course coverage materials</li>
                 <li>Student chat UI</li>
+                <li>Three-knock guidance pattern: hint, reference, next step</li>
                 <li>Socratic response instead of direct answers</li>
                 <li>Guardrails on every response</li>
                 <li>Conversation logging: question, response, timestamp, topic</li>
@@ -104,26 +107,24 @@
               </ul>
             </div>
           </div>
-          <aside class="speaker-notes">Say: This is intentionally narrow. We are proving the student learning loop and the admin visibility loop.</aside>
         </article>
 
         <article class="slide" data-title="UX Flow">
           <p class="section-label">Deliverable 4</p>
-          <h2>UX Flow / Wireframes</h2>
-          <p class="lead">The Figma walkthrough shows the full path: choose a role, ask privately, and review cohort support signals.</p>
+          <h2>UX Flow / Prototype</h2>
+          <p class="lead">Our Door gives students one doorway into help: three guided knocks, then the door opens to understanding.</p>
           <div class="demo-layout">
             <div class="demo-video">
-              <span>Figma walkthrough</span>
-              <video src="assets/figmademo.mp4" controls muted playsinline preload="metadata"></video>
+              <span>Our Door Figma demo</span>
+              <video src="assets/figmademo2.mp4" title="Our Door Figma demo" controls muted playsinline></video>
             </div>
             <div class="flow-list">
-              <div><span>01</span> Login with password</div>
-              <div><span>02</span> Choose Student or Admin</div>
-              <div><span>03</span> Student asks in chat</div>
-              <div><span>04</span> Admin reviews logged conversations</div>
+              <div><span>01</span> Login and choose Student or Admin</div>
+              <div><span>02</span> Student asks a curriculum question</div>
+              <div><span>03</span> Assistant gives three knocks: hint, reference, next step</div>
+              <div><span>04</span> Admin reviews logged stuck points</div>
             </div>
           </div>
-          <aside class="speaker-notes">Say: We will show the Figma walkthrough instead of crowding this slide with tiny screenshots.</aside>
         </article>
 
         <article class="slide" data-title="Ownership">
@@ -134,19 +135,24 @@
             <div class="info-card"><span>Ricky</span> Ingestion pipeline, chunking, embeddings, Chroma vector DB.</div>
             <div class="info-card"><span>Andrea</span> Frontend, auth/role routing, logging, admin dashboard.</div>
           </div>
-          <aside class="speaker-notes">Say: Each owner has a clear component with clear inputs and outputs.</aside>
+          <div class="team-strip">
+            <img src="assets/threesCompany.png" alt="Team Three's Company" />
+            <div>
+              <span>Team</span>
+              <strong>Three's Company</strong>
+            </div>
+          </div>
         </article>
 
         <article class="slide" data-title="Value">
           <p class="section-label">Close</p>
           <h2>What This Proves</h2>
-          <p class="lead">The MVP proves a two-sided learning loop: students get guided help, and admins see where support is needed.</p>
+          <p class="lead">Our Door proves a two-sided learning loop: students get guided knocks toward understanding, and admins see where support is needed.</p>
           <div class="card-grid three-up">
             <div class="info-card"><span>For students</span> Safer questions and better learning support.</div>
             <div class="info-card"><span>For admins</span> Clearer visibility into curriculum friction.</div>
             <div class="info-card"><span>For the program</span> Less guesswork, faster intervention, stronger outcomes.</div>
           </div>
-          <aside class="speaker-notes">Say: This is not trying to replace teaching. It helps students learn and helps instructors know where to focus.</aside>
         </article>
       </section>
 

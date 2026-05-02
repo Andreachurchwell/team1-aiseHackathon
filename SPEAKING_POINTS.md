@@ -9,6 +9,7 @@
 
 ## 2. Users + Why It Matters
 - Student: needs guided help based on course materials, not final answers.
+- Our Door guidance pattern: three knocks, then the door opens. Hint, curriculum reference, next thinking step.
 - Admin/instructor: needs visibility into where students are stuck.
 - The app supports both sides: better learning for students and better signals for staff.
 
@@ -19,13 +20,13 @@
 - Two hardcoded roles route users into either chat or dashboard.
 
 ## 4. MVP Scope
-- In by June 2: real corpus ingestion, backend ingestion path for admin-provided course coverage materials, student chat, Socratic responses, guardrails, conversation logging, admin view, two roles, Docker Compose, GitHub CI.
+- In by June 2: real corpus ingestion, backend ingestion path for admin-provided course coverage materials, student chat, three-knock guidance pattern, Socratic responses, guardrails, conversation logging, admin view, two roles, Docker Compose, GitHub CI.
 - Out by June 2: individual registration, student-specific history, analytics, polished admin file upload UI, multi-cohort support.
 - This keeps the MVP testable and realistic.
 
 ## 5. UX Flow
 - Login screen: password input and two role buttons.
-- Student chat: ask a curriculum question and get guided help.
+- Student chat: ask a curriculum question and get three guided knocks: hint, reference, next step.
 - Admin dashboard: table of logged questions by topic/time.
 - Admin empty state: clear message when no logs exist yet.
 
@@ -36,5 +37,5 @@
 
 ## 7. Closing Value
 - This is not trying to replace instruction.
-- It helps students ask better questions and keeps admins aware of where support is needed.
+- It helps students ask better questions through the three-knock guidance pattern and keeps admins aware of where support is needed.
 - The MVP proves the learning loop and the visibility loop.
