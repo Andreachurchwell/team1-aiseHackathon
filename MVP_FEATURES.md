@@ -2,6 +2,7 @@
 
 ## In
 - Canvas curriculum corpus ingested and queryable with real content.
+- Backend ingestion path for admin-provided course coverage materials.
 - Student chat UI.
 - Socratic response instead of direct answers.
 - Guardrails enforced on every response.
@@ -15,7 +16,7 @@
 - Individual user accounts or registration.
 - Student-specific history.
 - Analytics or visualizations.
-- File upload UI for admins.
+- Polished file upload UI for admins.
 - Multi-cohort support.
 
 ## Acceptance Criteria

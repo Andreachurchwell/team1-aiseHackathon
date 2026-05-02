@@ -1,11 +1,11 @@
 # 7-Minute Speaker Notes
 
 ## 1. Problem Framing
-- Cohort programs move fast and often have 100+ curriculum items inside Canvas across modules, pages, files, and assignments.
-- When students get stuck, it is easy to feel behind quickly.
-- Students cannot quickly find the right explanation.
-- The fallback is asking classmates or Googling direct answers.
-- That may solve the immediate task, but it does not support learning.
+- Cohort programs move fast and have a lot of materials: PDFs, slides, markdown files, recordings, notes, and assignments.
+- When students get stuck, it is easy to feel overwhelmed and behind quickly.
+- The fallback is asking classmates, Googling, or using ChatGPT for direct answers.
+- Those answers may not match the curriculum and may not support learning.
+- Our angle: help students get unstuck using the program's own materials, while helping instructors see repeated confusion before students fall behind.
 
 ## 2. Users + Why It Matters
 - Student: needs guided help based on course materials, not final answers.
@@ -13,14 +13,14 @@
 - The app supports both sides: better learning for students and better signals for staff.
 
 ## 3. System Architecture
-- Ricky owns ingestion: corpus, chunking, embeddings, Chroma.
+- Ricky owns ingestion: Canvas corpus, admin-provided course coverage materials, chunking, embeddings, Chroma.
 - Sam owns RAG and guardrails: retrieval, ranking, Socratic response logic.
 - Andrea owns the product surface: frontend, auth/role routing, logging, admin dashboard.
 - Two hardcoded roles route users into either chat or dashboard.
 
 ## 4. MVP Scope
-- In by June 2: real corpus ingestion, student chat, Socratic responses, guardrails, conversation logging, admin view, two roles, Docker Compose, GitHub CI.
-- Out by June 2: individual registration, student-specific history, analytics, admin file upload UI, multi-cohort support.
+- In by June 2: real corpus ingestion, backend ingestion path for admin-provided course coverage materials, student chat, Socratic responses, guardrails, conversation logging, admin view, two roles, Docker Compose, GitHub CI.
+- Out by June 2: individual registration, student-specific history, analytics, polished admin file upload UI, multi-cohort support.
 - This keeps the MVP testable and realistic.
 
 ## 5. UX Flow

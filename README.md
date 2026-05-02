@@ -6,7 +6,11 @@ MVP pitch deck and planning docs for Team Three's Company.
 Two-role learning assistant app: a curriculum-grounded assistant for cohort programs. Students ask questions in a chat UI and receive Socratic guidance, while admins see logged question patterns in a simple dashboard.
 
 ## Problem Frame
-Cohort programs move fast and can have 100+ curriculum items inside Canvas across modules, pages, files, assignments, and other course materials. When students get stuck, it is easy to feel behind quickly, and they cannot easily search or query across the full curriculum for targeted help. Instructors and admins do not have a clear view of where confusion is happening. The current fallback is asking a classmate or Googling the answer, neither of which reliably supports learning.
+Cohort programs move fast and have a lot of materials: PDFs, slides, markdown files, recordings, notes, and assignments. When students get stuck, it is easy to feel overwhelmed and behind quickly. Their fallback is usually asking classmates, Googling, or using ChatGPT for direct answers that may not match the curriculum.
+
+Our angle: help students get unstuck using the program's own materials, while helping instructors see repeated confusion patterns before students fall behind.
+
+For the MVP, admins can provide course coverage materials to the backend ingestion path, but a polished admin upload UI is out of scope for June 2.
 
 ## Files in this repo
 - `index.html` - presentation deck for the MVP pitch

@@ -3,16 +3,16 @@
 ## Users
 
 ### Student
-- Context: stuck on curriculum content during a fast-paced cohort program.
+- Context: stuck on curriculum content during a fast-paced cohort program with many materials: PDFs, slides, recordings, notes, and assignments.
 - Need: guided help grounded in the actual course materials.
 - Privacy need: safe space to ask questions without feeling embarrassed in front of admins or peers.
-- Risk: student feels behind quickly and turns to Google or generic AI for a final answer instead of learning support.
+- Risk: student feels overwhelmed and behind quickly, then turns to classmates, Google, or ChatGPT for a direct answer that may not match the curriculum.
 
 ### Admin
 - Context: non-technical program admin or instructor.
 - Need: visibility into where students are struggling.
 - What they should not need: code, database access, or an engineer to explain what is happening.
-- Risk: confusion stays hidden until many students fall behind.
+- Risk: repeated confusion stays hidden until many students fall behind.
 
 ## Student Journey
 

@@ -4,7 +4,8 @@
 
 ```mermaid
 graph LR
-  Docs[Canvas Curriculum<br/>Owner: Ricky] --> Ingest[Ingestion + Chunking<br/>Owner: Ricky]
+  AdminMaterials[Admin-Provided Course Coverage Materials] --> Ingest[Ingestion + Chunking<br/>Owner: Ricky]
+  Docs[Canvas Curriculum<br/>Owner: Ricky] --> Ingest
   Ingest --> Chunks[Chunks + Metadata<br/>Owner: Ricky]
   Chunks --> Embed[Embeddings<br/>Owner: Ricky]
   Embed --> Chroma[(Chroma Vector DB<br/>Owner: Ricky)]
@@ -53,6 +54,7 @@ graph LR
 
 ## Ingestion Pipeline
 - Reads Canvas curriculum exports/materials for the demo corpus.
+- Accepts admin-provided course coverage materials through the backend ingestion path.
 - Chunks by section or paragraph.
 - Embeds chunks with `text-embedding-3-small`.
 - Loads chunks and metadata into Chroma.

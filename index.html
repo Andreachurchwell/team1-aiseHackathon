@@ -21,11 +21,11 @@
         <article class="slide active" data-title="Problem">
           <p class="section-label">Deliverable 1</p>
           <h2>Problem Framing</h2>
-          <p class="lead">Cohort programs move fast. Even when curriculum lives in Canvas, it is easy for students to feel behind and hard to quickly find the exact help they need.</p>
+          <p class="lead">Cohort programs move fast and have a lot of materials: PDFs, slides, markdown files, recordings, notes, and assignments.</p>
           <div class="card-grid three-up">
-            <div class="info-card"><span>Students</span> Can feel behind quickly when they cannot find the right explanation.</div>
-            <div class="info-card"><span>Current fallback</span> Ask classmates or Google direct answers.</div>
-            <div class="info-card"><span>Instructors</span> Cannot see where students are getting stuck.</div>
+            <div class="info-card"><span>Students</span> Get overwhelmed and can feel behind quickly.</div>
+            <div class="info-card"><span>Current fallback</span> Ask classmates, Google, or use ChatGPT for direct answers.</div>
+            <div class="info-card"><span>Our angle</span> Use the program's own materials and show repeated confusion before students fall behind.</div>
           </div>
           <aside class="speaker-notes">Say: The problem is not just access to answers. The problem is learning support and visibility.</aside>
         </article>
@@ -49,7 +49,7 @@
               </div>
             </div>
           </div>
-          <p class="plain-note">The goal is safe learning help for students and clear signals for admins.</p>
+          <p class="plain-note user-goal-note">The goal is safe learning help for students and clear signals for admins.</p>
           <aside class="speaker-notes">Say: Students need help without answer dumping. Admins need patterns without needing to inspect the system manually.</aside>
         </article>
 
@@ -59,7 +59,8 @@
           <p class="lead">Two roles, one curriculum-grounded assistant, and clear ownership across the stack.</p>
           <div class="mermaid">
             graph LR
-              Docs["Curriculum docs<br/>Owner: Ricky"] --> Ingest["Ingest + chunk<br/>Owner: Ricky"]
+              AdminMaterials["Admin-provided<br/>course coverage materials"] --> Ingest["Ingest + chunk<br/>Owner: Ricky"]
+              Docs["Canvas curriculum docs<br/>Owner: Ricky"] --> Ingest
               Ingest --> Chroma[("Chroma vector DB<br/>Owner: Ricky")]
               Login["Login + JWT auth<br/>Owner: Andrea"] --> Router{"Student or Admin?"}
               Router --> Chat["Student chat UI<br/>Owner: Andrea"]
@@ -81,7 +82,8 @@
             <div class="scope-panel in-scope">
               <h3>IN</h3>
               <ul>
-                <li>Corpus ingested and queryable with real content</li>
+                <li>Canvas corpus ingested and queryable with real content</li>
+                <li>Backend ingestion path for admin-provided course coverage materials</li>
                 <li>Student chat UI</li>
                 <li>Socratic response instead of direct answers</li>
                 <li>Guardrails on every response</li>
@@ -97,7 +99,7 @@
                 <li>Individual user accounts or registration</li>
                 <li>Student-specific history</li>
                 <li>Analytics or visualizations</li>
-                <li>File upload UI for admins</li>
+                <li>Polished file upload UI for admins</li>
                 <li>Multi-cohort support</li>
               </ul>
             </div>

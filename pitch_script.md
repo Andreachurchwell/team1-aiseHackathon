@@ -3,15 +3,15 @@
 ## Slide 1 - Problem Framing
 **Andrea, ~45 seconds**
 
-"Cohort programs like ours move fast, and they run on a lot of curriculum inside Canvas: modules, files, pages, assignments, and other course materials.
+"Cohort programs like ours move fast, and they have a lot of materials: PDFs, slides, markdown files, recordings, notes, and assignments.
 
-The problem is that when a student gets stuck, it is easy to feel behind really quickly. And in that moment, they often don't know where to look first.
+The problem is that when a student gets stuck, it is easy to feel overwhelmed and behind really quickly.
 
-So they usually do one of two things: ask a classmate, or Google the answer directly. Both can help in the moment, but neither one really supports learning.
+So they usually do one of three things: ask a classmate, Google the answer, or use ChatGPT for a direct answer. Those can help in the moment, but they may not match the curriculum and they do not always support learning.
 
 At the same time, instructors and admins don't have a clear way to see where students are getting stuck. They see the final work, but not the confusion that happened before it.
 
-So the problem has two sides: students need better guided support, and instructors need better visibility."
+Our angle is to help students get unstuck using the program's own materials, while helping instructors see repeated confusion patterns before students fall behind."
 
 **Transition:** "That brings us to the two users we designed this around."
 
@@ -35,7 +35,7 @@ This product supports both sides of that loop: guided help for students, and cle
 
 "On the left side, I handle the curriculum pipeline.
 
-We take the Canvas curriculum materials and break them into smaller sections.
+We take the Canvas curriculum materials and any admin-provided course coverage materials, then break them into smaller sections.
 
 Then we convert those sections into a format the system can search and store them in a database.
 
@@ -76,13 +76,13 @@ So everything you just heard actually shows up in a simple, usable interface."
 
 "For the MVP, we were very intentional about scope.
 
-What's in: real curriculum that's fully searchable, a working student chat experience, Socratic responses instead of direct answers, guardrails on every response, and full conversation logging.
+What's in: real curriculum that's fully searchable, a backend ingestion path for admin-provided course coverage materials, a working student chat experience, Socratic responses instead of direct answers, guardrails on every response, and full conversation logging.
 
 Admins can view those logs in a simple dashboard.
 
 We also support two hardcoded roles, student and admin, and the project runs with one command using Docker.
 
-What's out: user accounts, analytics dashboards, file uploads, and multi-cohort support.
+What's out: user accounts, analytics dashboards, a polished admin file upload screen, and multi-cohort support.
 
 The goal wasn't to build everything.
 
