@@ -12,7 +12,7 @@
 
 Our Door is built around a simple idea: when students get stuck, they shouldn't have to guess where to go next.
 
-Cohort programs like ours move fast, and they come with a lot of materials: PDFs, slides, markdown files, recordings, notes, and assignments.
+Cohort programs like ours move fast, and they come with a lot of materials.
 
 The problem is that when a student gets stuck, it’s easy to feel overwhelmed and fall behind quickly.
 
@@ -24,8 +24,7 @@ At the same time, instructors don’t have a clear way to see where students are
 
 Our angle is simple: help students get unstuck using the program’s own materials, while helping instructors see patterns of confusion before students fall behind."
 
-**Transition:**  
-"That brings us to the two users we designed this around."
+
 
 ---
 
@@ -40,7 +39,7 @@ They need a safe place to ask questions — privately.
 
 Because in a cohort setting, a lot of students won’t ask at all if they feel embarrassed. And when they stop asking, they stop learning.
 
-Our Door removes that pressure completely. Students can ask anything without feeling exposed.
+Our Door removes that pressure completely. Students can ask anything about class without feeling exposed.
 
 And instead of just giving answers, we guide them through what we call *three knocks.*
 
@@ -52,11 +51,13 @@ The door opens because the student understands where to go next — not because 
 
 The second user is the instructor or admin.
 
-They need visibility: what students are asking, where confusion keeps coming up, and where support is needed.
+They don’t need to see *who* asked — they need to see *what* students are struggling with.
+
+So Our Door shows patterns: common questions, repeated confusion points, and areas where students need support.
 
 Why this matters is simple: learning isn’t just about getting the right answer — it’s about understanding how to get there.
 
-Our Door supports both sides of that loop: guided help for students, and clear signals for instructors."
+Our Door supports both sides of that loop: private, guided help for students, and clear, aggregated signals for instructors.
 
 **Transition:**  
 "Ricky is going to walk through how the system makes that possible."

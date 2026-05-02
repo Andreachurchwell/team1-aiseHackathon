@@ -1,0 +1,26 @@
+The guardrail -- this is the one they'll probe hardest "How does your system prevent the bot from just answering the question?" Your answer: two layers. System prompt instructs Socratic behavior. Post-generation validator checks the response before it sends -- if it contains a direct answer it gets blocked and regenerated. Not just a prompt, a pipeline step.
+
+
+"What if a student tries to jailbreak it?" Your answer: the validator runs on every response regardless of how the question is phrased. The LLM doesn't decide if it answered -- a separate check does.
+The corpus "How are you handling the known issues in the corpus?" Your answer: ingestion pipeline validates each file on load, logs failures and skips bad files rather than crashing. We don't know what the issues are yet but the pipeline is designed to surface them.
+
+
+Tech choices "Why not a local model if it's supposed to be private?" Your answer: OpenAI API tier does not use data for training. Cost-justified at under $5/month for 20 students. Self-hosting introduces infra overhead that conflicts with the non-technical admin requirement.
+Scope "Why no individual user accounts?" Your answer: the admin doesn't need to know who asked, they need to know what's being asked. Hardcoded roles satisfy the auth requirement without scope creep.
+The one you might not expect "What's the lower priority requirement you identified?" Have an answer ready. Yours: the "private" framing -- we interpreted it as access-controlled, not self-hosted, and here's why.
+heres why?
+
+Because the brief specifies no hardware constraints and explicitly allows external APIs with cost justification. For a cohort of 20 students, OpenAI's API tier satisfies the privacy requirement -- API data is not used for model training -- without the infrastructure complexity that would make the system unmaintainable for a non-technical admin. Self-hosting trades one problem for a bigger one.
+
+
+Sam: "The guardrail is a post-generation check -- before the response sends, we validate it doesn't contain a direct answer. If it does, it gets blocked and regenerated. It's a pipeline step, not just a prompt."
+"FastAPI because the brief recommended it, it's Python, and we all know Python."
+"Chroma because it's free, runs locally, no external service, and it's the right scale for 20 students and 100 documents."
+
+Ricky: "The ingestion pipeline reads PDFs and markdown, chunks them by section, embeds them, and loads them into Chroma."
+"If a file is broken the pipeline logs it and skips it. It doesn't crash, it surfaces the issue."
+
+Andrea: "Student logs in, gets the chat screen, types a question, gets a Socratic response back. That's the whole flow."
+"Admin logs in, sees a table of every conversation -- timestamp, question, response. No individual accounts because the admin needs to know what's being asked, not who's asking."
+
+Everyone: "No individual user accounts because the brief says the admin is non-technical. Simpler auth means the system is actually maintainable. Hardcoded roles satisfy the requirement without the overhead."
